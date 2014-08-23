@@ -41,10 +41,10 @@ GREEN="0,$MAXCOLOR,0"
 BLUE="0,0,$MAXCOLOR"
 
 while true; do
-	"$BLINKTOOL" -m "${FADETIME}000" --rgb "$RED"
+	"$BLINKTOOL" --id all -m "${FADETIME}000" --rgb "$RED"
 	sleep "$FADETIME"
-	"$BLINKTOOL" -m "${FADETIME}000" --rgb "$GREEN"
+	"$BLINKTOOL" --id all -m "${FADETIME}000" --rgb "$GREEN"
 	sleep "$FADETIME"
-	"$BLINKTOOL" -m "${FADETIME}000" --rgb "$BLUE"
+	"$BLINKTOOL" --id all -m "${FADETIME}000" --rgb "$BLUE"
 	sleep "$FADETIME"
 done
