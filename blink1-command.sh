@@ -45,7 +45,7 @@ GREEN="0,$MAXCOLOR,0"
 BLUE="0,0,$MAXCOLOR"
 
 "$BLINKTOOL" --rgb "$BLUE"
-$COMMAND
+sh -c "$COMMAND"
 
 STATUS=$?
 if [ $STATUS -eq 0 ]; then
